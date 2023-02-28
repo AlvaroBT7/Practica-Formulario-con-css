@@ -1,0 +1,1 @@
+alert("La pagina se ha cargado");

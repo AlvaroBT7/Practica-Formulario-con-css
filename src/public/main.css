@@ -36,7 +36,7 @@ input {
     outline: none;
     border-radius: 0;
     border: none;
-    background: transparent;
+    background-color: #222732;
     border: 1.5px solid rgb(0, 145, 255);
     color: #fff;
     margin: 20px;
@@ -49,6 +49,9 @@ input {
 .contenedor {
     border-bottom: 1px solid #aaa;
     padding-bottom: 80px;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
 }
 
 input:focus {
@@ -85,6 +88,20 @@ input:focus::placeholder {
 .btn:hover {
     box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+textarea {
+    width: 94%;
+    min-height: 300px;
+    background-color: #222732;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    border: 1.5px solid rgb(0, 145, 255);
+    resize: none;
+    overflow: auto;
 }
 
 .title-container {
