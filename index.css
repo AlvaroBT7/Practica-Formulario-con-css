@@ -1,0 +1,101 @@
+/* css global variables */
+:root {
+    --main-background-color: #2d3038;
+    --main-border-radius: 2px;
+
+    --form-background-color: #1d2027;
+    --form-font-color: #e9eaf6;
+    --form-border-color: #555;
+    --form-padding: 25px;
+    --form-width: 65vw;
+
+    --input-background-color: transparent;
+    --input-font-size: 16px;
+    --input-padding: 15px;
+
+    --button-background-color: #1bc4dd;
+    --button-shadow-color: #1bc4dd50;
+    --button-padding: 10px;
+
+    --title-font-size: 28px;
+}
+
+* {
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+.form {
+    width: var(--form-width);
+    margin: 100px auto;
+    padding: var(--form-padding);
+    background-color: var(--form-background-color);
+    border-radius: var(--main-border-radius);
+    border: 1px solid var(--form-border-color);
+}
+
+.title-container {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.title-container .title {
+    font-size: var(--title-font-size);
+}
+
+/* .input-container {
+
+} */
+
+.input {
+    width: 100%;
+    color: var(--form-font-color);
+    padding: var(--input-padding);
+    background-color: var(--input-background-color);
+    font-size: var(--input-font-size);
+    border-bottom: 1px solid var(--form-border-color);
+    transition: all 0.2s;
+}
+
+textarea.input {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 125px;
+    max-height: 1000px;
+    overflow: hidden;
+}
+
+.input::placeholder {
+    transition: all 0.2s;
+}
+
+.input:focus::placeholder {
+    color: var(--button-background-color);
+}
+
+.submit-container {
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.submit {
+    background-color: var(--button-background-color);
+    font-size: var(--input-font-size);
+    padding: var(--button-padding);
+    border-radius: var(--main-border-radius);
+    width: 35%;
+    transition: all 0.2s;
+}
+
+.submit:hover {
+    box-shadow: 0 0 35px 0 var(--button-shadow-color);
+}
